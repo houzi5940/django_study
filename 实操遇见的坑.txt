@@ -1,0 +1,8 @@
+1、创建数据库请自行搜索mysql相关教程
+
+2、分布式路由时须在主路由后面加“/”，分布式路由后面也要加“/”
+	如： 主路由：     path('user/', include('user.urls')),
+		分路由：     path('reg/',views.reg_view)
+	表单上也要加上“/”
+	如：    <form action = '/user/reg/' method="POST">
+	很重要
